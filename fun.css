@@ -1,0 +1,108 @@
+/* @keyframes rainbowtext {
+    0%{
+        color: red;
+        font-size: 20px;
+    }
+    25%{
+        color:orange;
+    }
+    50%{
+        color:yellow;
+        font-size:40px;
+    }
+    75%{
+        color:green;
+    }
+    100%{
+        color: blue;
+        font-size: 20px;
+    }
+}
+
+p {
+    animation-name: rainbowtext;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+} */
+
+body {
+    margin: 0 0 0 0;
+    background-color: #17202A;
+    animation-name: sky;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  .grass {
+    background: green;
+    margin-top:200px;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .sun {
+    background: #f1c40f;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    animation-name: sun;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-deloay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes sky {
+    0%{
+      background-color: #17202A;
+    }
+    
+    10%{
+      background-color: #154360;
+    }
+    
+    30%{
+      background-color: #1F618D;
+    }
+    50%{
+      background-color: #4FC3F7;
+    }
+    80%{
+      background-color: #1F618D;
+    }
+    90%{
+      background-color: #311B92;
+    }
+    100%{
+      background-color: #17202A;
+    }
+  }
+  
+  @keyframes sun {
+    0%{
+      background: #D35400;
+      transform: translate(-200px, 250px);
+    }
+    25%{
+      background: #FDD835;
+      transform: translate(625px, 0px);
+    }
+    50%{
+      background: #FFEB3B;
+      transform: translate(1250px, -100px);
+    }
+    75%{
+      background: #FDD835;
+      transform: translate(1900px, 0px);
+    }
+    100%{
+      background: #EF6C00;
+      transform: translate(2500px, 300px)
+    }
+  }
